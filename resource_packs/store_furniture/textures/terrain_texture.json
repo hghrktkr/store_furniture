@@ -1,209 +1,212 @@
 {
-  "resource_pack_name": "vanilla",
-  "texture_name": "atlas.terrain",
-  "padding": 8,
-  "num_mip_levels": 4,
-  "texture_data": {
-    "bread_shelf_body": {
-      "textures": "textures/blocks/bread_shelf/bread_shelf_body"
-    },
-    "bread_shelf_basket": {
-      "textures": "textures/blocks/bread_shelf/bread_shelf_basket"
-    },
-    "bread_shelf_bread": {
-      "textures": "textures/blocks/bread_shelf/bread_shelf_bread"
-    },
-    "meat_display_display": {
-      "textures": "textures/blocks/meat_display/display"
-    },
-    "meat_display_display_side_none": {
-      "textures": "textures/blocks/meat_display/display_side_none"
-    },
-    "meat_display_beef_cooked": {
-      "textures": "textures/blocks/meat_display/meat_display_beef_cooked"
-    },
-    "meat_display_beef_raw": {
-      "textures": "textures/blocks/meat_display/meat_display_beef_raw"
-    },
-    "meat_display_chicken_cooked": {
-      "textures": "textures/blocks/meat_display/meat_display_chicken_cooked"
-    },
-    "meat_display_chicken_raw": {
-      "textures": "textures/blocks/meat_display/meat_display_chicken_raw"
-    },
-    "meat_display_mutton_cooked": {
-      "textures": "textures/blocks/meat_display/meat_display_mutton_cooked"
-    },
-    "meat_display_mutton_raw": {
-      "textures": "textures/blocks/meat_display/meat_display_mutton_raw"
-    },
-    "meat_display_rabbit_cooked": {
-      "textures": "textures/blocks/meat_display/meat_display_rabbit_cooked"
-    },
-    "meat_display_rabbit_raw": {
-      "textures": "textures/blocks/meat_display/meat_display_rabbit_raw"
-    },
-    "meat_display_rotten_flesh": {
-      "textures": "textures/blocks/meat_display/meat_display_rotten_flesh"
-    },
-    "fish_display_display": {
-      "textures": "textures/blocks/fish_display/display"
-    },
-    "fish_display_display_side_none": {
-      "textures": "textures/blocks/fish_display/display_side_none"
-    },
-    "fish_display_fish_clownfish_raw": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_clownfish_raw"
-    },
-    "fish_display_fish_cooked": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_cooked"
-    },
-    "fish_display_fish_pufferfish_raw": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_pufferfish_raw"
-    },
-    "fish_display_fish_raw": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_raw"
-    },
-    "fish_display_fish_salmon_cooked": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_salmon_cooked"
-    },
-    "fish_display_fish_salmon_raw": {
-      "textures": "textures/blocks/fish_display/fish_display_fish_salmon_raw"
-    },
-    "fish_display_ink_sac": {
-      "textures": "textures/blocks/fish_display/fish_display_ink_sac"
-    },
-    "fish_display_kelp": {
-      "textures": "textures/blocks/fish_display/fish_display_kelp"
-    },
-    "fish_display_nautilus": {
-      "textures": "textures/blocks/fish_display/fish_display_nautilus"
-    },
-    "basket": {
-      "textures": "textures/blocks/basket/basket"
-    },
-    "basket_apple": {
-      "textures": "textures/blocks/basket/basket_apple"
-    },
-    "basket_apple_golden": {
-      "textures": "textures/blocks/basket/basket_apple_golden"
-    },
-    "basket_beetroot": {
-      "textures": "textures/blocks/basket/basket_beetroot"
-    },
-    "basket_carrot": {
-      "textures": "textures/blocks/basket/basket_carrot"
-    },
-    "basket_chorus_fruit": {
-      "textures": "textures/blocks/basket/basket_chorus_fruit"
-    },
-    "basket_melon": {
-      "textures": "textures/blocks/basket/basket_melon"
-    },
-    "basket_potato": {
-      "textures": "textures/blocks/basket/basket_potato"
-    },
-    "basket_pumpkin": {
-      "textures": "textures/blocks/basket/basket_pumpkin"
-    },
-    "basket_sweet_berries": {
-      "textures": "textures/blocks/basket/basket_sweet_berries"
-    },
-    "microwave": {
-      "textures": "textures/blocks/microwave"
-    },
-    "chilled_showcase_body": {
-      "textures": "textures/blocks/chilled_showcase/body"
-    },
-    "chilled_showcase_board": {
-      "textures": "textures/blocks/chilled_showcase/board"
-    },
-    "logo_large": {
-      "textures": "textures/blocks/logo/logo_large"
-    },
-    "logo_small": {
-      "textures": "textures/blocks/logo/logo_small"
-    },
-    "pos_body": {
-      "textures": "textures/blocks/pos/pos_body"
-    },
-    "pos_main_monitor": {
-      "textures": "textures/blocks/pos/pos_main_monitor"
-    },
-    "pos_register_monitor": {
-      "textures": "textures/blocks/pos/pos_register_monitor"
-    },
-    "convinience_store_wall": {
-      "textures": "textures/blocks/convinience_store_wall"
-    },
-    "hot_snack_body": {
-      "textures": "textures/blocks/hot_snack/body"
-    },
-    "hot_snack_board": {
-      "textures": "textures/blocks/hot_snack/board"
-    },
-    "hot_snack_door": {
-      "textures": "textures/blocks/hot_snack/door"
-    },
-    "hot_snack1": {
-      "textures": "textures/blocks/hot_snack/hot_snack1"
-    },
-    "hot_snack2": {
-      "textures": "textures/blocks/hot_snack/hot_snack2"
-    },
-    "hot_snack3": {
-      "textures": "textures/blocks/hot_snack/hot_snack3"
-    },
-    "hot_snack4": {
-      "textures": "textures/blocks/hot_snack/hot_snack4"
-    },
-    "hot_snack5": {
-      "textures": "textures/blocks/hot_snack/hot_snack5"
-    },
-    "analog_clock": {
-      "textures": "textures/blocks/analog_clock"
-    },
-    "icecream_case_body": {
-      "textures": "textures/blocks/icecream_case/body"
-    },
-    "icecream_case_case": {
-      "textures": "textures/blocks/icecream_case/case"
-    },
-    "icecream1": {
-      "textures": "textures/blocks/icecream_case/icecream1"
-    },
-    "icecream2": {
-      "textures": "textures/blocks/icecream_case/icecream2"
-    },
-    "icecream3": {
-      "textures": "textures/blocks/icecream_case/icecream3"
-    },
-    "icecream4": {
-      "textures": "textures/blocks/icecream_case/icecream4"
-    },
-    "icecream5": {
-      "textures": "textures/blocks/icecream_case/icecream5"
-    },
-    "icecream6": {
-      "textures": "textures/blocks/icecream_case/icecream6"
-    },
-    "walk_in_board": {
-      "textures": "textures/blocks/walk_in_cooler/board"
-    },
-    "walk_in_potion": {
-      "textures": "textures/blocks/walk_in_cooler/potion"
-    },
-    "walk_in_body_bottom": {
-      "textures": "textures/blocks/walk_in_cooler/body_bottom"
-    },
-    "walk_in_body_top": {
-      "textures": "textures/blocks/walk_in_cooler/body_top"
-    },
-    "walk_in_door_bottom": {
-      "textures": "textures/blocks/walk_in_cooler/door_bottom"
-    },
-    "walk_in_door_top": {
-      "textures": "textures/blocks/walk_in_cooler/door_top"
-    }
-  }
+	"resource_pack_name": "vanilla",
+	"texture_name": "atlas.terrain",
+	"padding": 8,
+	"num_mip_levels": 4,
+	"texture_data": {
+		"snack_shelf": {
+			"textures": "textures/blocks/snack_shelf"
+		},
+		"bread_shelf_body": {
+			"textures": "textures/blocks/bread_shelf/bread_shelf_body"
+		},
+		"bread_shelf_basket": {
+			"textures": "textures/blocks/bread_shelf/bread_shelf_basket"
+		},
+		"bread_shelf_bread": {
+			"textures": "textures/blocks/bread_shelf/bread_shelf_bread"
+		},
+		"meat_display_display": {
+			"textures": "textures/blocks/meat_display/display"
+		},
+		"meat_display_display_side_none": {
+			"textures": "textures/blocks/meat_display/display_side_none"
+		},
+		"meat_display_beef_cooked": {
+			"textures": "textures/blocks/meat_display/meat_display_beef_cooked"
+		},
+		"meat_display_beef_raw": {
+			"textures": "textures/blocks/meat_display/meat_display_beef_raw"
+		},
+		"meat_display_chicken_cooked": {
+			"textures": "textures/blocks/meat_display/meat_display_chicken_cooked"
+		},
+		"meat_display_chicken_raw": {
+			"textures": "textures/blocks/meat_display/meat_display_chicken_raw"
+		},
+		"meat_display_mutton_cooked": {
+			"textures": "textures/blocks/meat_display/meat_display_mutton_cooked"
+		},
+		"meat_display_mutton_raw": {
+			"textures": "textures/blocks/meat_display/meat_display_mutton_raw"
+		},
+		"meat_display_rabbit_cooked": {
+			"textures": "textures/blocks/meat_display/meat_display_rabbit_cooked"
+		},
+		"meat_display_rabbit_raw": {
+			"textures": "textures/blocks/meat_display/meat_display_rabbit_raw"
+		},
+		"meat_display_rotten_flesh": {
+			"textures": "textures/blocks/meat_display/meat_display_rotten_flesh"
+		},
+		"fish_display_display": {
+			"textures": "textures/blocks/fish_display/display"
+		},
+		"fish_display_display_side_none": {
+			"textures": "textures/blocks/fish_display/display_side_none"
+		},
+		"fish_display_fish_clownfish_raw": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_clownfish_raw"
+		},
+		"fish_display_fish_cooked": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_cooked"
+		},
+		"fish_display_fish_pufferfish_raw": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_pufferfish_raw"
+		},
+		"fish_display_fish_raw": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_raw"
+		},
+		"fish_display_fish_salmon_cooked": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_salmon_cooked"
+		},
+		"fish_display_fish_salmon_raw": {
+			"textures": "textures/blocks/fish_display/fish_display_fish_salmon_raw"
+		},
+		"fish_display_ink_sac": {
+			"textures": "textures/blocks/fish_display/fish_display_ink_sac"
+		},
+		"fish_display_kelp": {
+			"textures": "textures/blocks/fish_display/fish_display_kelp"
+		},
+		"fish_display_nautilus": {
+			"textures": "textures/blocks/fish_display/fish_display_nautilus"
+		},
+		"basket": {
+			"textures": "textures/blocks/basket/basket"
+		},
+		"basket_apple": {
+			"textures": "textures/blocks/basket/basket_apple"
+		},
+		"basket_apple_golden": {
+			"textures": "textures/blocks/basket/basket_apple_golden"
+		},
+		"basket_beetroot": {
+			"textures": "textures/blocks/basket/basket_beetroot"
+		},
+		"basket_carrot": {
+			"textures": "textures/blocks/basket/basket_carrot"
+		},
+		"basket_chorus_fruit": {
+			"textures": "textures/blocks/basket/basket_chorus_fruit"
+		},
+		"basket_melon": {
+			"textures": "textures/blocks/basket/basket_melon"
+		},
+		"basket_potato": {
+			"textures": "textures/blocks/basket/basket_potato"
+		},
+		"basket_pumpkin": {
+			"textures": "textures/blocks/basket/basket_pumpkin"
+		},
+		"basket_sweet_berries": {
+			"textures": "textures/blocks/basket/basket_sweet_berries"
+		},
+		"microwave": {
+			"textures": "textures/blocks/microwave"
+		},
+		"chilled_showcase_body": {
+			"textures": "textures/blocks/chilled_showcase/body"
+		},
+		"chilled_showcase_board": {
+			"textures": "textures/blocks/chilled_showcase/board"
+		},
+		"logo_large": {
+			"textures": "textures/blocks/logo/logo_large"
+		},
+		"logo_small": {
+			"textures": "textures/blocks/logo/logo_small"
+		},
+		"pos_body": {
+			"textures": "textures/blocks/pos/pos_body"
+		},
+		"pos_main_monitor": {
+			"textures": "textures/blocks/pos/pos_main_monitor"
+		},
+		"pos_register_monitor": {
+			"textures": "textures/blocks/pos/pos_register_monitor"
+		},
+		"convinience_store_wall": {
+			"textures": "textures/blocks/convinience_store_wall"
+		},
+		"hot_snack_body": {
+			"textures": "textures/blocks/hot_snack/body"
+		},
+		"hot_snack_board": {
+			"textures": "textures/blocks/hot_snack/board"
+		},
+		"hot_snack_door": {
+			"textures": "textures/blocks/hot_snack/door"
+		},
+		"hot_snack1": {
+			"textures": "textures/blocks/hot_snack/hot_snack1"
+		},
+		"hot_snack2": {
+			"textures": "textures/blocks/hot_snack/hot_snack2"
+		},
+		"hot_snack3": {
+			"textures": "textures/blocks/hot_snack/hot_snack3"
+		},
+		"hot_snack4": {
+			"textures": "textures/blocks/hot_snack/hot_snack4"
+		},
+		"hot_snack5": {
+			"textures": "textures/blocks/hot_snack/hot_snack5"
+		},
+		"analog_clock": {
+			"textures": "textures/blocks/analog_clock"
+		},
+		"icecream_case_body": {
+			"textures": "textures/blocks/icecream_case/body"
+		},
+		"icecream_case_case": {
+			"textures": "textures/blocks/icecream_case/case"
+		},
+		"icecream1": {
+			"textures": "textures/blocks/icecream_case/icecream1"
+		},
+		"icecream2": {
+			"textures": "textures/blocks/icecream_case/icecream2"
+		},
+		"icecream3": {
+			"textures": "textures/blocks/icecream_case/icecream3"
+		},
+		"icecream4": {
+			"textures": "textures/blocks/icecream_case/icecream4"
+		},
+		"icecream5": {
+			"textures": "textures/blocks/icecream_case/icecream5"
+		},
+		"icecream6": {
+			"textures": "textures/blocks/icecream_case/icecream6"
+		},
+		"walk_in_board": {
+			"textures": "textures/blocks/walk_in_cooler/board"
+		},
+		"walk_in_potion": {
+			"textures": "textures/blocks/walk_in_cooler/potion"
+		},
+		"walk_in_body_bottom": {
+			"textures": "textures/blocks/walk_in_cooler/body_bottom"
+		},
+		"walk_in_body_top": {
+			"textures": "textures/blocks/walk_in_cooler/body_top"
+		},
+		"walk_in_door_bottom": {
+			"textures": "textures/blocks/walk_in_cooler/door_bottom"
+		},
+		"walk_in_door_top": {
+			"textures": "textures/blocks/walk_in_cooler/door_top"
+		}
+	}
 }

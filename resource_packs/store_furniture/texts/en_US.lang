@@ -13,3 +13,4 @@ item.spawn_egg.entity.edu:clerk.name=Spawn clerk
 tile.edu:shelf_vegitable.name=shelf_vegitable
 tile.edu:fish_display.name=fish_display
 tile.edu:bread_shelf.name=bread_shelf
+tile.edu:snack_shelf.name=snack_shelf
