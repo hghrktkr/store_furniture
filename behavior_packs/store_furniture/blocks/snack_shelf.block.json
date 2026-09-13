@@ -1,70 +1,146 @@
 {
-	"format_version": "1.21.100",
-	"minecraft:block": {
-		"description": {
-			"identifier": "edu:snack_shelf",
-			"menu_category": {
-				"category": "construction"
-			},
-			"traits": {
-				"minecraft:placement_direction": {
-					"enabled_states": ["minecraft:cardinal_direction"]
-				}
-			}
-		},
-		"components": {
-			"minecraft:collision_box": true,
-			"minecraft:selection_box": true,
-			"minecraft:destructible_by_mining": {
-				"seconds_to_destroy": 0.65
-			},
-			"minecraft:destructible_by_explosion": {
-				"explosion_resistance": 15
-			},
-			"minecraft:geometry": "geometry.snack_shelf",
-			"minecraft:material_instances": {
-				"*": {
-					"texture": "snack_shelf",
-					"render_method": "alpha_test"
-				}
-			},
-			"minecraft:light_emission": 6,
-			"minecraft:map_color": "#5f4a2b",
-			"tag:minecraft:is_pickaxe_item_destructible": {}
-		},
-		"permutations": [
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 180, 0]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 0, 0]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 90, 0]
-					}
-				}
-			},
-			{
-				"condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
-				"components": {
-					"minecraft:transformation": {
-						"rotation": [0, 270, 0]
-					}
-				}
-			}
-		]
-	}
+  "format_version": "1.21.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:snack_shelf",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.snack_shelf",
+      "minecraft:material_instances": {
+        "snack_shelf_body": {
+          "texture": "snack_shelf_body",
+          "render_method": "blend"
+        },
+        "snack_shelf_shelf": {
+          "texture": "snack_shelf_shelf",
+          "render_method": "blend"
+        },
+        "snack_shelf_shelf_large": {
+          "texture": "snack_shelf_shelf",
+          "render_method": "blend"
+        },
+        "snack_shelf_shelf_mix": {
+          "texture": "snack_shelf_shelf",
+          "render_method": "blend"
+        },
+        "snack_1": {
+          "texture": "snack_1",
+          "render_method": "blend"
+        },
+        "snack_2": {
+          "texture": "snack_2",
+          "render_method": "blend"
+        },
+        "snack_3": {
+          "texture": "snack_3",
+          "render_method": "blend"
+        },
+        "snack_4": {
+          "texture": "snack_4",
+          "render_method": "blend"
+        },
+        "snack_5": {
+          "texture": "snack_5",
+          "render_method": "blend"
+        },
+        "snack_6": {
+          "texture": "snack_6",
+          "render_method": "blend"
+        },
+        "snack_7": {
+          "texture": "snack_7",
+          "render_method": "blend"
+        },
+        "snack_8": {
+          "texture": "snack_8",
+          "render_method": "blend"
+        },
+        "snack_9": {
+          "texture": "snack_9",
+          "render_method": "blend"
+        },
+        "snack_10": {
+          "texture": "snack_10",
+          "render_method": "blend"
+        },
+        "snack_11": {
+          "texture": "snack_11",
+          "render_method": "blend"
+        },
+        "snack_12": {
+          "texture": "snack_12",
+          "render_method": "blend"
+        },
+        "snack_13": {
+          "texture": "snack_13",
+          "render_method": "blend"
+        },
+        "snack_14": {
+          "texture": "snack_14",
+          "render_method": "blend"
+        },
+        "snack_15": {
+          "texture": "snack_15",
+          "render_method": "blend"
+        },
+        "snack_16": {
+          "texture": "snack_16",
+          "render_method": "blend"
+        }
+      },
+      "minecraft:light_emission": 6,
+      "minecraft:map_color": "#5f4a2b",
+      "tag:minecraft:is_pickaxe_item_destructible": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      }
+    ]
+  }
 }
