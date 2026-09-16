@@ -30,7 +30,7 @@
           "texture": "delica_display_body",
           "render_method": "alpha_test"
         },
-        "delica_display_east": {
+        "delica_display_body_east": {
           "texture": "delica_display_body",
           "render_method": "alpha_test"
         },
@@ -134,7 +134,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -204,7 +204,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
@@ -274,7 +274,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -344,7 +344,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -414,7 +414,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
@@ -484,7 +484,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -554,7 +554,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -624,7 +624,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
@@ -694,7 +694,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -764,7 +764,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
@@ -834,7 +834,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
@@ -904,7 +904,7 @@
               "texture": "delica_display_body",
               "render_method": "alpha_test"
             },
-            "delica_display_east": {
+            "delica_display_body_east": {
               "texture": "delica_display_body_none",
               "render_method": "alpha_test"
             },
