@@ -1210,21 +1210,21 @@
 							"origin": [-6.5, 8, 0],
 							"size": [6, 3, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_11"}
+								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_12"}
 							}
 						},
 						{
 							"origin": [-6.5, 8, 2],
 							"size": [6, 3, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_11"}
+								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_12"}
 							}
 						},
 						{
 							"origin": [-6.5, 8, 4],
 							"size": [6, 3, 0],
 							"uv": {
-								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_11"}
+								"north": {"uv": [0, 0], "uv_size": [6, 3], "material_instance": "snack_12"}
 							}
 						}
 					]
