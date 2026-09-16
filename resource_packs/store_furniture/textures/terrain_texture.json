@@ -4,6 +4,54 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "delica_display_body": {
+      "textures": "textures/blocks/delica_display/delica_display_body"
+    },
+    "delica_display_body_east": {
+      "textures": "textures/blocks/delica_display/delica_display_body"
+    },
+    "delica_display_body_west": {
+      "textures": "textures/blocks/delica_display/delica_display_body"
+    },
+    "delica_display_body_none": {
+      "textures": "textures/blocks/delica_display/delica_display_body_none"
+    },
+    "delica_1": {
+      "textures": "textures/blocks/delica_display/suspicious_stew"
+    },
+    "delica_2": {
+      "textures": "textures/blocks/delica_display/mushroom_stew"
+    },
+    "delica_3": {
+      "textures": "textures/blocks/delica_display/rabbit_stew"
+    },
+    "delica_4": {
+      "textures": "textures/blocks/delica_display/beetroot_soup"
+    },
+    "delica_5": {
+      "textures": "textures/blocks/delica_display/pumpkin_pie"
+    },
+    "delica_6": {
+      "textures": "textures/blocks/delica_display/potato_baked"
+    },
+    "delica_7": {
+      "textures": "textures/blocks/delica_display/beef_cooked"
+    },
+    "delica_8": {
+      "textures": "textures/blocks/delica_display/chicken_cooked"
+    },
+    "delica_9": {
+      "textures": "textures/blocks/delica_display/hoglin_meat_cooked"
+    },
+    "delica_10": {
+      "textures": "textures/blocks/delica_display/fish_cooked"
+    },
+    "delica_11": {
+      "textures": "textures/blocks/delica_display/fish_salmon_cooked"
+    },
+    "delica_12": {
+      "textures": "textures/blocks/delica_display/mutton_cooked"
+    },
     "snack_shelf_body": {
       "textures": "textures/blocks/snack_shelf/snack_shelf_body"
     },

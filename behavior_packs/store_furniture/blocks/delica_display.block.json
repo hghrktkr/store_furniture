@@ -1,0 +1,968 @@
+{
+  "format_version": "1.26.32",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:delica_display",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        },
+        "minecraft:connection": {
+          "enabled_states": ["minecraft:cardinal_connections"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.delica_display",
+      "minecraft:material_instances": {
+        "delica_display_body": {
+          "texture": "delica_display_body",
+          "render_method": "alpha_test"
+        },
+        "delica_display_east": {
+          "texture": "delica_display_body",
+          "render_method": "alpha_test"
+        },
+        "delica_display_west": {
+          "texture": "delica_display_body",
+          "render_method": "alpha_test"
+        },
+        "delica_1": {
+          "texture": "delica_1",
+          "render_method": "alpha_test"
+        },
+        "delica_2": {
+          "texture": "delica_2",
+          "render_method": "alpha_test"
+        },
+        "delica_3": {
+          "texture": "delica_3",
+          "render_method": "alpha_test"
+        },
+        "delica_4": {
+          "texture": "delica_4",
+          "render_method": "alpha_test"
+        },
+        "delica_5": {
+          "texture": "delica_5",
+          "render_method": "alpha_test"
+        },
+        "delica_6": {
+          "texture": "delica_6",
+          "render_method": "alpha_test"
+        },
+        "delica_7": {
+          "texture": "delica_7",
+          "render_method": "alpha_test"
+        },
+        "delica_8": {
+          "texture": "delica_8",
+          "render_method": "alpha_test"
+        },
+        "delica_9": {
+          "texture": "delica_9",
+          "render_method": "alpha_test"
+        },
+        "delica_10": {
+          "texture": "delica_10",
+          "render_method": "alpha_test"
+        },
+        "delica_11": {
+          "texture": "delica_11",
+          "render_method": "alpha_test"
+        },
+        "delica_12": {
+          "texture": "delica_12",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_emission": 9,
+      "minecraft:map_color": "#5f4a2b"
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && !q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "delica_display_body": {
+              "texture": "delica_display_body",
+              "render_method": "alpha_test"
+            },
+            "delica_display_east": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_display_west": {
+              "texture": "delica_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "delica_1": {
+              "texture": "delica_1",
+              "render_method": "alpha_test"
+            },
+            "delica_2": {
+              "texture": "delica_2",
+              "render_method": "alpha_test"
+            },
+            "delica_3": {
+              "texture": "delica_3",
+              "render_method": "alpha_test"
+            },
+            "delica_4": {
+              "texture": "delica_4",
+              "render_method": "alpha_test"
+            },
+            "delica_5": {
+              "texture": "delica_5",
+              "render_method": "alpha_test"
+            },
+            "delica_6": {
+              "texture": "delica_6",
+              "render_method": "alpha_test"
+            },
+            "delica_7": {
+              "texture": "delica_7",
+              "render_method": "alpha_test"
+            },
+            "delica_8": {
+              "texture": "delica_8",
+              "render_method": "alpha_test"
+            },
+            "delica_9": {
+              "texture": "delica_9",
+              "render_method": "alpha_test"
+            },
+            "delica_10": {
+              "texture": "delica_10",
+              "render_method": "alpha_test"
+            },
+            "delica_11": {
+              "texture": "delica_11",
+              "render_method": "alpha_test"
+            },
+            "delica_12": {
+              "texture": "delica_12",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,322 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.delica_display",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "body",
+					"parent": "bone",
+					"pivot": [0, 12, 0],
+					"cubes": [
+						{
+							"origin": [-8, 8, 6],
+							"size": [16, 6, 2],
+							"uv": {
+								"north": {"uv": [32, 8], "uv_size": [16, 6], "material_instance": "delica_display_body"},
+								"east": {"uv": [10, 42], "uv_size": [2, 6], "material_instance": "delica_display_body"},
+								"south": {"uv": [32, 14], "uv_size": [16, 6], "material_instance": "delica_display_body"},
+								"west": {"uv": [12, 42], "uv_size": [2, 6], "material_instance": "delica_display_body"},
+								"up": {"uv": [32, 30], "uv_size": [16, 2], "material_instance": "delica_display_body"},
+								"down": {"uv": [32, 34], "uv_size": [16, -2], "material_instance": "delica_display_body"}
+							}
+						},
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 8, 16],
+							"uv": {
+								"north": {"uv": [16, 20], "uv_size": [16, 8], "material_instance": "delica_display_body"},
+								"east": {"uv": [16, 28], "uv_size": [16, 8], "material_instance": "delica_display_body"},
+								"south": {"uv": [0, 32], "uv_size": [16, 8], "material_instance": "delica_display_body"},
+								"west": {"uv": [32, 0], "uv_size": [16, 8], "material_instance": "delica_display_body"},
+								"up": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "delica_display_body"},
+								"down": {"uv": [0, 32], "uv_size": [16, -16], "material_instance": "delica_display_body"}
+							}
+						},
+						{
+							"origin": [-8, 8, -8],
+							"size": [16, 2, 0],
+							"uv": {
+								"north": {"uv": [32, 34], "uv_size": [16, 2], "material_instance": "delica_display_body"}
+							}
+						},
+						{
+							"origin": [-7.9, 8, -4],
+							"size": [15.8, 2, 10],
+							"uv": {
+								"north": {"uv": [32, 36], "uv_size": [16, 2], "material_instance": "delica_display_body"},
+								"east": {"uv": [26, 40], "uv_size": [10, 2], "material_instance": "delica_display_body"},
+								"south": {"uv": [16, 38], "uv_size": [16, 2], "material_instance": "delica_display_body"},
+								"west": {"uv": [36, 40], "uv_size": [10, 2], "material_instance": "delica_display_body"},
+								"up": {"uv": [16, 0], "uv_size": [16, 10], "material_instance": "delica_display_body"},
+								"down": {"uv": [16, 20], "uv_size": [16, -10], "material_instance": "delica_display_body"}
+							}
+						},
+						{
+							"origin": [-7.9, 10, 1],
+							"size": [15.8, 2, 5],
+							"uv": {
+								"north": {"uv": [32, 38], "uv_size": [16, 2], "material_instance": "delica_display_body"},
+								"east": {"uv": [26, 42], "uv_size": [5, 2], "material_instance": "delica_display_body"},
+								"south": {"uv": [0, 40], "uv_size": [16, 2], "material_instance": "delica_display_body"},
+								"west": {"uv": [31, 42], "uv_size": [5, 2], "material_instance": "delica_display_body"},
+								"up": {"uv": [32, 20], "uv_size": [16, 5], "material_instance": "delica_display_body"},
+								"down": {"uv": [32, 30], "uv_size": [16, -5], "material_instance": "delica_display_body"}
+							}
+						},
+						{
+							"origin": [8, 8, 1],
+							"size": [0, 6, 5],
+							"uv": {
+								"west": {"uv": [16, 40], "uv_size": [5, 6], "material_instance": "delica_display_body_west"}
+							}
+						},
+						{
+							"origin": [8, 8, -4],
+							"size": [0, 4, 5],
+							"uv": {
+								"west": {"uv": [0, 42], "uv_size": [5, 4], "material_instance": "delica_display_body_west"}
+							}
+						},
+						{
+							"origin": [8, 8, -8],
+							"size": [0, 2, 4],
+							"uv": {
+								"west": {"uv": [36, 42], "uv_size": [4, 2], "material_instance": "delica_display_body_west"}
+							}
+						},
+						{
+							"origin": [-8, 8, 1],
+							"size": [0, 6, 5],
+							"uv": {
+								"west": {"uv": [21, 40], "uv_size": [5, 6], "material_instance": "delica_display_body_east"}
+							}
+						},
+						{
+							"origin": [-8, 8, -4],
+							"size": [0, 4, 5],
+							"uv": {
+								"west": {"uv": [5, 42], "uv_size": [5, 4], "material_instance": "delica_display_body_east"}
+							}
+						},
+						{
+							"origin": [-8, 8, -8],
+							"size": [0, 2, 4],
+							"uv": {
+								"west": {"uv": [40, 42], "uv_size": [4, 2], "material_instance": "delica_display_body_east"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica",
+					"parent": "bone",
+					"pivot": [8.4, 0, -8]
+				},
+				{
+					"name": "delica_1",
+					"parent": "delica",
+					"pivot": [8.4, 0, -8],
+					"cubes": [
+						{
+							"origin": [4.4, 8, -6],
+							"size": [3, 3, 0],
+							"pivot": [6.4, 8, -5],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_1"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_2",
+					"parent": "delica",
+					"pivot": [8.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [4.4, 10, -2],
+							"size": [3, 3, 0],
+							"pivot": [6.4, 10, -1],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_2"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_3",
+					"parent": "delica",
+					"pivot": [8.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [4.4, 12, 3],
+							"size": [3, 3, 0],
+							"pivot": [6.4, 12, 4],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_3"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_4",
+					"parent": "delica",
+					"pivot": [4.4, 0, -8],
+					"cubes": [
+						{
+							"origin": [0.4, 8, -6],
+							"size": [3, 3, 0],
+							"pivot": [2.4, 8, -5],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_4"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_5",
+					"parent": "delica",
+					"pivot": [4.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [0.4, 10, -2],
+							"size": [3, 3, 0],
+							"pivot": [2.4, 10, -1],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_5"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_6",
+					"parent": "delica",
+					"pivot": [4.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [0.4, 12, 3],
+							"size": [3, 3, 0],
+							"pivot": [2.4, 12, 4],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_6"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_7",
+					"parent": "delica",
+					"pivot": [0.4, 0, -8],
+					"cubes": [
+						{
+							"origin": [-3.6, 8, -6],
+							"size": [3, 3, 0],
+							"pivot": [-1.6, 8, -5],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_7"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_8",
+					"parent": "delica",
+					"pivot": [0.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [-3.6, 10, -2],
+							"size": [3, 3, 0],
+							"pivot": [-1.6, 10, -1],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_8"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_9",
+					"parent": "delica",
+					"pivot": [0.4, 2, -8],
+					"cubes": [
+						{
+							"origin": [-3.6, 12, 3],
+							"size": [3, 3, 0],
+							"pivot": [-1.6, 12, 4],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_9"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_10",
+					"parent": "delica",
+					"pivot": [-3.6, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7.6, 8, -6],
+							"size": [3, 3, 0],
+							"pivot": [-5.6, 8, -5],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_10"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_11",
+					"parent": "delica",
+					"pivot": [-3.6, 2, -8],
+					"cubes": [
+						{
+							"origin": [-7.6, 10, -2],
+							"size": [3, 3, 0],
+							"pivot": [-5.6, 10, -1],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_11"}
+							}
+						}
+					]
+				},
+				{
+					"name": "delica_12",
+					"parent": "delica",
+					"pivot": [-3.6, 2, -8],
+					"cubes": [
+						{
+							"origin": [-7.6, 12, 3],
+							"size": [3, 3, 0],
+							"pivot": [-5.6, 12, 4],
+							"rotation": [-10, 0, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [64, 64], "material_instance": "delica_12"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}
