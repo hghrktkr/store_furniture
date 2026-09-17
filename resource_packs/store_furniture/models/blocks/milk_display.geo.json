@@ -6,7 +6,7 @@
 				"identifier": "geometry.milk_display",
 				"texture_width": 16,
 				"texture_height": 16,
-				"visible_bounds_width": 2,
+				"visible_bounds_width": 3,
 				"visible_bounds_height": 3.5,
 				"visible_bounds_offset": [0, 1.25, 0]
 			},
@@ -34,7 +34,7 @@
 						},
 						{
 							"origin": [-8, 6, -4],
-							"size": [0.5, 22, 12],
+							"size": [0, 22, 12],
 							"uv": {
 								"north": {"uv": [6.5, 3], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_east"},
 								"east": {"uv": [3, 2.75], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_east"},
@@ -45,8 +45,8 @@
 							}
 						},
 						{
-							"origin": [7.5, 6, -4],
-							"size": [0.5, 22, 12],
+							"origin": [8, 6, -4],
+							"size": [0, 22, 12],
 							"uv": {
 								"north": {"uv": [3.75, 6.25], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_west"},
 								"east": {"uv": [0, 2.75], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_west"},
@@ -69,8 +69,8 @@
 							}
 						},
 						{
-							"origin": [-7.5, 6, 7],
-							"size": [15, 22, 1],
+							"origin": [-8, 6, 7],
+							"size": [16, 22, 1],
 							"uv": {
 								"north": {"uv": [0, 0], "uv_size": [1.875, 2.75], "material_instance": "milk_display_body"},
 								"east": {"uv": [3.5, 6.25], "uv_size": [0.125, 2.75], "material_instance": "milk_display_body"},
