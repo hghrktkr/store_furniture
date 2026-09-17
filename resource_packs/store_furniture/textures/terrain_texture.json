@@ -4,6 +4,24 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "milk_display_body": {
+      "textures": "textures/blocks/milk_display/milk_display_body"
+    },
+    "milk_display_body_none": {
+      "textures": "textures/blocks/milk_display/milk_display_body_none"
+    },
+    "milk_display_board": {
+      "textures": "textures/blocks/milk_display/milk_display_board"
+    },
+    "egg_case": {
+      "textures": "textures/blocks/milk_display/egg_case"
+    },
+    "milk_display_egg": {
+      "textures": "textures/blocks/milk_display/egg"
+    },
+    "milk_display_milk": {
+      "textures": "textures/blocks/milk_display/bucket_milk"
+    },
     "delica_display_body": {
       "textures": "textures/blocks/delica_display/delica_display_body"
     },

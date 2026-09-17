@@ -1,0 +1,1015 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.milk_display",
+				"texture_width": 16,
+				"texture_height": 16,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "body",
+					"parent": "bone",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -4],
+							"size": [16, 6, 12],
+							"uv": {
+								"north": {"uv": [5.25, 1.5], "uv_size": [2, 0.75], "material_instance": "milk_display_body"},
+								"east": {"uv": [4, 5.75], "uv_size": [1.5, 0.75], "material_instance": "milk_display_body"},
+								"south": {"uv": [2, 5.5], "uv_size": [2, 0.75], "material_instance": "milk_display_body"},
+								"west": {"uv": [5.5, 5.75], "uv_size": [1.5, 0.75], "material_instance": "milk_display_body"},
+								"up": {"uv": [4.5, 2.75], "uv_size": [2, 1.5], "material_instance": "milk_display_body"},
+								"down": {"uv": [4.5, 5.75], "uv_size": [2, -1.5], "material_instance": "milk_display_body"}
+							}
+						},
+						{
+							"origin": [-8, 6, -4],
+							"size": [0.5, 22, 12],
+							"uv": {
+								"north": {"uv": [6.5, 3], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_east"},
+								"east": {"uv": [3, 2.75], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_east"},
+								"south": {"uv": [4, 6.5], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_east"},
+								"west": {"uv": [3.75, 0], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_east"},
+								"up": {"uv": [4.375, 6.5], "uv_size": [0.0625, 1.5], "material_instance": "milk_display_body_east"},
+								"down": {"uv": [4.5, 8], "uv_size": [0.0625, -1.5], "material_instance": "milk_display_body_east"}
+							}
+						},
+						{
+							"origin": [7.5, 6, -4],
+							"size": [0.5, 22, 12],
+							"uv": {
+								"north": {"uv": [3.75, 6.25], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_west"},
+								"east": {"uv": [0, 2.75], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_west"},
+								"south": {"uv": [3.875, 6.25], "uv_size": [0.0625, 2.75], "material_instance": "milk_display_body_west"},
+								"west": {"uv": [1.5, 2.75], "uv_size": [1.5, 2.75], "material_instance": "milk_display_body_west"},
+								"up": {"uv": [4.125, 6.5], "uv_size": [0.0625, 1.5], "material_instance": "milk_display_body_west"},
+								"down": {"uv": [4.25, 8], "uv_size": [0.0625, -1.5], "material_instance": "milk_display_body_west"}
+							}
+						},
+						{
+							"origin": [-8, 28, -4],
+							"size": [16, 2, 12],
+							"uv": {
+								"north": {"uv": [5.25, 2.25], "uv_size": [2, 0.25], "material_instance": "milk_display_body"},
+								"east": {"uv": [2, 6.25], "uv_size": [1.5, 0.25], "material_instance": "milk_display_body"},
+								"south": {"uv": [5.25, 2.5], "uv_size": [2, 0.25], "material_instance": "milk_display_body"},
+								"west": {"uv": [2, 6.5], "uv_size": [1.5, 0.25], "material_instance": "milk_display_body"},
+								"up": {"uv": [5.25, 0], "uv_size": [2, 1.5], "material_instance": "milk_display_body"},
+								"down": {"uv": [0, 7], "uv_size": [2, -1.5], "material_instance": "milk_display_body"}
+							}
+						},
+						{
+							"origin": [-7.5, 6, 7],
+							"size": [15, 22, 1],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [1.875, 2.75], "material_instance": "milk_display_body"},
+								"east": {"uv": [3.5, 6.25], "uv_size": [0.125, 2.75], "material_instance": "milk_display_body"},
+								"south": {"uv": [1.875, 0], "uv_size": [1.875, 2.75], "material_instance": "milk_display_body"},
+								"west": {"uv": [3.625, 6.25], "uv_size": [0.125, 2.75], "material_instance": "milk_display_body"}
+							}
+						},
+						{
+							"origin": [-7.5, 6, -4],
+							"size": [15, 1, 0],
+							"pivot": [0, 6, -4],
+							"rotation": [-17.5, 0, 0],
+							"uv": {
+								"north": {"uv": [6.5, 2.75], "uv_size": [1.875, 0.125], "material_instance": "milk_display_body"}
+							}
+						}
+					]
+				},
+				{
+					"name": "boards",
+					"parent": "bone",
+					"pivot": [-6, 8.6, 6]
+				},
+				{
+					"name": "board1",
+					"parent": "boards",
+					"pivot": [8, 12, 6],
+					"cubes": [
+						{
+							"origin": [-7.5, 14, 0],
+							"size": [15, 0.5, 7],
+							"uv": {
+								"north": {"uv": [0, 7], "uv_size": [7.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 0], "uv_size": [3.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [0, 7.5], "uv_size": [7.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 0.5], "uv_size": [3.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [0, 0], "uv_size": [7.5, 3.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [0, 7], "uv_size": [7.5, -3.5], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "left",
+					"parent": "board1",
+					"pivot": [8, 12, 6],
+					"cubes": [
+						{
+							"origin": [6.5, 13.5, 2],
+							"size": [1, 0.5, 5],
+							"uv": {
+								"north": {"uv": [8, 4.5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 1], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 1.5], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [7.5, 2], "uv_size": [0.5, 2.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [7.5, 7], "uv_size": [0.5, -2.5], "material_instance": "milk_display_board"}
+							}
+						},
+						{
+							"origin": [6.5, 13, 5],
+							"size": [1, 0.5, 2],
+							"uv": {
+								"north": {"uv": [8, 5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [1, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [5.5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [2, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [8, 2], "uv_size": [0.5, 1], "material_instance": "milk_display_board"},
+								"down": {"uv": [3, 9], "uv_size": [0.5, -1], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "right",
+					"parent": "board1",
+					"pivot": [-6, 12, 6],
+					"cubes": [
+						{
+							"origin": [-7.5, 13.5, 2],
+							"size": [1, 0.5, 5],
+							"uv": {
+								"north": {"uv": [8, 5.5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 7], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [6, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 7.5], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [0, 8], "uv_size": [0.5, 2.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [0.5, 10.5], "uv_size": [0.5, -2.5], "material_instance": "milk_display_board"}
+							}
+						},
+						{
+							"origin": [-7.5, 13, 5],
+							"size": [1, 0.5, 2],
+							"uv": {
+								"north": {"uv": [8, 6], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [8, 3], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [6.5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [3.5, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [8, 3.5], "uv_size": [0.5, 1], "material_instance": "milk_display_board"},
+								"down": {"uv": [4.5, 9], "uv_size": [0.5, -1], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "board2",
+					"parent": "boards",
+					"pivot": [8, 19, 6],
+					"cubes": [
+						{
+							"origin": [-7.5, 21, 0],
+							"size": [15, 0.5, 7],
+							"uv": {
+								"north": {"uv": [0, 7], "uv_size": [7.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 0], "uv_size": [3.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [0, 7.5], "uv_size": [7.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 0.5], "uv_size": [3.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [0, 0], "uv_size": [7.5, 3.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [0, 7], "uv_size": [7.5, -3.5], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "left2",
+					"parent": "board2",
+					"pivot": [8, 19, 6],
+					"cubes": [
+						{
+							"origin": [6.5, 20.5, 2],
+							"size": [1, 0.5, 5],
+							"uv": {
+								"north": {"uv": [8, 4.5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 1], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 1.5], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [7.5, 2], "uv_size": [0.5, 2.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [7.5, 7], "uv_size": [0.5, -2.5], "material_instance": "milk_display_board"}
+							}
+						},
+						{
+							"origin": [6.5, 20, 5],
+							"size": [1, 0.5, 2],
+							"uv": {
+								"north": {"uv": [8, 5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [1, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [5.5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [2, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [8, 2], "uv_size": [0.5, 1], "material_instance": "milk_display_board"},
+								"down": {"uv": [3, 9], "uv_size": [0.5, -1], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "right2",
+					"parent": "board2",
+					"pivot": [-6, 19, 6],
+					"cubes": [
+						{
+							"origin": [-7.5, 20.5, 2],
+							"size": [1, 0.5, 5],
+							"uv": {
+								"north": {"uv": [8, 5.5], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [7.5, 7], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [6, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [7.5, 7.5], "uv_size": [2.5, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [0, 8], "uv_size": [0.5, 2.5], "material_instance": "milk_display_board"},
+								"down": {"uv": [0.5, 10.5], "uv_size": [0.5, -2.5], "material_instance": "milk_display_board"}
+							}
+						},
+						{
+							"origin": [-7.5, 20, 5],
+							"size": [1, 0.5, 2],
+							"uv": {
+								"north": {"uv": [8, 6], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"east": {"uv": [8, 3], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"south": {"uv": [6.5, 8], "uv_size": [0.5, 0.5], "material_instance": "milk_display_board"},
+								"west": {"uv": [3.5, 8], "uv_size": [1, 0.5], "material_instance": "milk_display_board"},
+								"up": {"uv": [8, 3.5], "uv_size": [0.5, 1], "material_instance": "milk_display_board"},
+								"down": {"uv": [4.5, 9], "uv_size": [0.5, -1], "material_instance": "milk_display_board"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg1",
+					"parent": "bone",
+					"pivot": [8, 0, -8]
+				},
+				{
+					"name": "case1",
+					"parent": "egg1",
+					"pivot": [-4, 0, -8],
+					"cubes": [
+						{
+							"origin": [-7, 6, 6],
+							"size": [4, 2, 0],
+							"uv": {
+								"south": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-7, 6, -1],
+							"size": [4, 2, 0],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-7, 8, -1],
+							"size": [4, 0, 7],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [4, 7], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-3, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"west": {"uv": [7, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-7, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg2",
+					"parent": "egg1",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [-5, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-7, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-7, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-7, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-7, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-7, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg3",
+					"parent": "bone",
+					"pivot": [13, 0, -8]
+				},
+				{
+					"name": "case2",
+					"parent": "egg3",
+					"pivot": [1, 0, -8],
+					"cubes": [
+						{
+							"origin": [-2, 6, 6],
+							"size": [4, 2, 0],
+							"uv": {
+								"south": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-2, 6, -1],
+							"size": [4, 2, 0],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-2, 8, -1],
+							"size": [4, 0, 7],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [4, 7], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [2, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"west": {"uv": [7, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-2, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg4",
+					"parent": "egg3",
+					"pivot": [13, 0, -8],
+					"cubes": [
+						{
+							"origin": [0, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [0, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [0, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [0, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [0, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-2, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-2, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-2, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-2, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-2, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg5",
+					"parent": "bone",
+					"pivot": [18, 0, -8]
+				},
+				{
+					"name": "case3",
+					"parent": "egg5",
+					"pivot": [6, 0, -8],
+					"cubes": [
+						{
+							"origin": [3, 6, 6],
+							"size": [4, 2, 0],
+							"uv": {
+								"south": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [3, 6, -1],
+							"size": [4, 2, 0],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [3, 8, -1],
+							"size": [4, 0, 7],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [4, 7], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [7, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"west": {"uv": [7, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [3, 6, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg6",
+					"parent": "egg5",
+					"pivot": [18, 0, -8],
+					"cubes": [
+						{
+							"origin": [5, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [5, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [5, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [5, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [5, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 6, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 6, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 6, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 6, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 6, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg7",
+					"parent": "bone",
+					"pivot": [16, 2, -8]
+				},
+				{
+					"name": "case4",
+					"parent": "egg7",
+					"pivot": [4, 2, -8],
+					"cubes": [
+						{
+							"origin": [1, 8, 6],
+							"size": [4, 2, 0],
+							"uv": {
+								"south": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [1, 8, -1],
+							"size": [4, 2, 0],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [1, 10, -1],
+							"size": [4, 0, 7],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [4, 7], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [5, 8, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"west": {"uv": [7, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [1, 8, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg8",
+					"parent": "egg7",
+					"pivot": [16, 2, -8],
+					"cubes": [
+						{
+							"origin": [3, 8, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 8, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 8, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 8, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [3, 8, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 8, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 8, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 8, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 8, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [1, 8, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg9",
+					"parent": "bone",
+					"pivot": [10, 2, -8]
+				},
+				{
+					"name": "case5",
+					"parent": "egg9",
+					"pivot": [-2, 2, -8],
+					"cubes": [
+						{
+							"origin": [-5, 8, 6],
+							"size": [4, 2, 0],
+							"uv": {
+								"south": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-5, 8, -1],
+							"size": [4, 2, 0],
+							"uv": {
+								"north": {"uv": [8, 0], "uv_size": [4, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-5, 10, -1],
+							"size": [4, 0, 7],
+							"uv": {
+								"up": {"uv": [0, 0], "uv_size": [4, 7], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-1, 8, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"west": {"uv": [7, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						},
+						{
+							"origin": [-5, 8, -1],
+							"size": [0, 2, 7],
+							"uv": {
+								"east": {"uv": [0, 7], "uv_size": [7, 2], "material_instance": "egg_case"}
+							}
+						}
+					]
+				},
+				{
+					"name": "egg10",
+					"parent": "egg9",
+					"pivot": [10, 2, -8],
+					"cubes": [
+						{
+							"origin": [-3, 8, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 8, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 8, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 8, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-3, 8, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 8, 4.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 8, 3.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 8, 2.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 8, 1.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						},
+						{
+							"origin": [-5, 8, 0.6],
+							"size": [2, 2, 0],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16], "material_instance": "egg"}
+							}
+						}
+					]
+				},
+				{
+					"name": "milk",
+					"parent": "bone",
+					"pivot": [8, 0, -8],
+					"cubes": [
+						{
+							"origin": [2, 14.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [2, 14.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [2, 14.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 14.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 14.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 14.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 14.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 14.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 14.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 21.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 21.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-6, 21.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 21.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 21.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [-2, 21.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [2, 21.4, 6],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [2, 21.4, 4],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						},
+						{
+							"origin": [2, 21.4, 2],
+							"size": [4, 4, 0],
+							"uv": {
+								"north": {"uv": [1, 0], "uv_size": [14, 15], "material_instance": "milk"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

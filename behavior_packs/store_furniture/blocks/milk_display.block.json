@@ -1,0 +1,552 @@
+{
+  "format_version": "1.26.32",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:milk_display",
+      "menu_category": {
+        "category": "construction"
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        },
+        "minecraft:connection": {
+          "enabled_states": ["minecraft:cardinal_connections"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.milk_display",
+      "minecraft:material_instances": {
+        "milk_display_body": {
+          "texture": "milk_display_body",
+          "render_method": "alpha_test"
+        },
+        "milk_display_body_east": {
+          "texture": "milk_display_body",
+          "render_method": "alpha_test"
+        },
+        "milk_display_body_west": {
+          "texture": "milk_display_body",
+          "render_method": "alpha_test"
+        },
+        "milk_display_board": {
+          "texture": "milk_display_board",
+          "render_method": "alpha_test"
+        },
+        "egg_case": {
+          "texture": "egg_case",
+          "render_method": "alpha_test"
+        },
+        "egg": {
+          "texture": "milk_display_egg",
+          "render_method": "alpha_test"
+        },
+        "milk": {
+          "texture": "milk_display_milk",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_emission": 6,
+      "minecraft:map_color": "#5f4a2b"
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && !q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && !q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north' && q.block_state('minecraft:connection_west') && q.block_state('minecraft:connection_east')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && !q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && !q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south' && q.block_state('minecraft:connection_east') && q.block_state('minecraft:connection_west')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && !q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && !q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east' && q.block_state('minecraft:connection_north') && q.block_state('minecraft:connection_south')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && !q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && !q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west' && q.block_state('minecraft:connection_south') && q.block_state('minecraft:connection_north')",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          },
+          "minecraft:material_instances": {
+            "milk_display_body": {
+              "texture": "milk_display_body",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_east": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_body_west": {
+              "texture": "milk_display_body_none",
+              "render_method": "alpha_test"
+            },
+            "milk_display_board": {
+              "texture": "milk_display_board",
+              "render_method": "alpha_test"
+            },
+            "egg_case": {
+              "texture": "egg_case",
+              "render_method": "alpha_test"
+            },
+            "egg": {
+              "texture": "milk_display_egg",
+              "render_method": "alpha_test"
+            },
+            "milk": {
+              "texture": "milk_display_milk",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
