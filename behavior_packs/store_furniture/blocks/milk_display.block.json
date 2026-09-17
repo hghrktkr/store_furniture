@@ -28,31 +28,31 @@
       "minecraft:material_instances": {
         "milk_display_body": {
           "texture": "milk_display_body",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "milk_display_body_east": {
           "texture": "milk_display_body",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "milk_display_body_west": {
           "texture": "milk_display_body",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "milk_display_board": {
           "texture": "milk_display_board",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "egg_case": {
           "texture": "egg_case",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "egg": {
           "texture": "milk_display_egg",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         },
         "milk": {
           "texture": "milk_display_milk",
-          "render_method": "alpha_test"
+          "render_method": "blend"
         }
       },
       "minecraft:light_emission": 6,
@@ -100,31 +100,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -138,31 +138,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -176,31 +176,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -214,31 +214,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -252,31 +252,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -290,31 +290,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -328,31 +328,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -366,31 +366,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -404,31 +404,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -442,31 +442,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -480,31 +480,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
@@ -518,31 +518,31 @@
           "minecraft:material_instances": {
             "milk_display_body": {
               "texture": "milk_display_body",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_east": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_body_west": {
               "texture": "milk_display_body_none",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk_display_board": {
               "texture": "milk_display_board",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg_case": {
               "texture": "egg_case",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "egg": {
               "texture": "milk_display_egg",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             },
             "milk": {
               "texture": "milk_display_milk",
-              "render_method": "alpha_test"
+              "render_method": "blend"
             }
           }
         }
