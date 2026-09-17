@@ -1,5 +1,8 @@
 {
 	"format_version": "1.21.0",
+	"edu:goods_shelf": {
+		"sound": "wood"
+	},
 	"edu:milk_display": {
 		"sound": "wood"
 	},

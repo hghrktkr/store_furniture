@@ -4,6 +4,63 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "goods_shelf_body": {
+      "textures": "textures/blocks/goods_shelf/goods_shelf_body"
+    },
+    "goods_1": {
+      "textures": "textures/blocks/goods_shelf/book_normal"
+    },
+    "goods_2": {
+      "textures": "textures/blocks/goods_shelf/bowl"
+    },
+    "goods_3": {
+      "textures": "textures/blocks/goods_shelf/brush"
+    },
+    "goods_4": {
+      "textures": "textures/blocks/goods_shelf/bucket_empty"
+    },
+    "goods_5": {
+      "textures": "textures/blocks/goods_shelf/flint_and_steel"
+    },
+    "goods_6": {
+      "textures": "textures/blocks/goods_shelf/flower_pot"
+    },
+    "goods_7": {
+      "textures": "textures/blocks/goods_shelf/iron_axe"
+    },
+    "goods_8": {
+      "textures": "textures/blocks/goods_shelf/iron_pickaxe"
+    },
+    "goods_9": {
+      "textures": "textures/blocks/goods_shelf/iron_shovel"
+    },
+    "goods_10": {
+      "textures": "textures/blocks/goods_shelf/item_frame"
+    },
+    "goods_11": {
+      "textures": "textures/blocks/goods_shelf/lantern"
+    },
+    "goods_12": {
+      "textures": "textures/blocks/goods_shelf/lead"
+    },
+    "goods_13": {
+      "textures": "textures/blocks/goods_shelf/PaintBrush"
+    },
+    "goods_14": {
+      "textures": "textures/blocks/goods_shelf/paper"
+    },
+    "goods_15": {
+      "textures": "textures/blocks/goods_shelf/shears"
+    },
+    "goods_16": {
+      "textures": "textures/blocks/goods_shelf/stick"
+    },
+    "goods_17": {
+      "textures": "textures/blocks/goods_shelf/string"
+    },
+    "goods_18": {
+      "textures": "textures/blocks/goods_shelf/torch_on"
+    },
     "milk_display_body": {
       "textures": "textures/blocks/milk_display/milk_display_body"
     },
