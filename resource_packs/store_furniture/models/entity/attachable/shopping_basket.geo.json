@@ -1,0 +1,42 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shopping_basket",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root_item",
+					"pivot": [0, 0, 0],
+					"binding": "q.item_slot_to_bone_name(c.item_slot)",
+					"cubes": [
+						{"origin": [-2.5, -0.5, -4.5], "size": [5, 5.5, 9], "uv": [0, 0]},
+						{
+							"origin": [-3, 4, 4.5],
+							"size": [6, 1, 0.5],
+							"uv": {
+								"north": {"uv": [20, 24], "uv_size": [6, 1]},
+								"east": {"uv": [20, 24], "uv_size": [0, 1]},
+								"south": {"uv": [26, 24], "uv_size": [6, 1]},
+								"west": {"uv": [26, 24], "uv_size": [0, 1]},
+								"up": {"uv": [20, 24], "uv_size": [6, 0]},
+								"down": {"uv": [26, 24], "uv_size": [6, 0]}
+							}
+						},
+						{"origin": [-3, 4, -5], "size": [6, 1, 0.5], "uv": [20, 25]},
+						{"origin": [-3, 4, -4.5], "size": [0.5, 1, 9], "uv": [0, 14]},
+						{"origin": [2.5, 4, -4.5], "size": [0.5, 1, 9], "uv": [18, 14]},
+						{"origin": [-2.5, 5, -2], "size": [5, 4, 0], "pivot": [0, 5, -2], "rotation": [-20, 0, 0], "uv": [0, 24]},
+						{"origin": [-2.5, 5, 2], "size": [5, 4, 0], "pivot": [0, 5, 2], "rotation": [20, 0, 0], "uv": [10, 24]}
+					]
+				}
+			]
+		}
+	]
+}
