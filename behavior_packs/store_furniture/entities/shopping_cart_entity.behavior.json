@@ -1,0 +1,20 @@
+{
+  "format_version": "1.26.32",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "edu:shopping_cart_entity",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:push_through": {
+        "value": 1
+      }
+    }
+  }
+}
