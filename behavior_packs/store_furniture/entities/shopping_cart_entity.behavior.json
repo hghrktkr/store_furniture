@@ -12,8 +12,12 @@
         "has_gravity": true,
         "has_collision": true
       },
+      "minecraft:pushable_by_entity": {},
       "minecraft:push_through": {
         "value": 1
+      },
+      "minecraft:interact": {
+        "interactions": [{ "swing": true }]
       }
     }
   }

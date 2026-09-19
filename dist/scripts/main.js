@@ -1,5 +1,5 @@
 // scripts/main.ts
-import { system } from "@minecraft/server";
+import { system as system2, world as world3 } from "@minecraft/server";
 
 // scripts/walkInCooler/walkInCoolerBlock.ts
 import { BlockPermutation, Direction } from "@minecraft/server";
@@ -16,6 +16,19 @@ function sendSystemMessage(text) {
     console.warn(`[test] ${text}`);
     world.sendMessage(`\xA7c[test] ${text}`);
   }
+}
+function getCardinalDirection(rotation) {
+  const yaw = (rotation.y % 360 + 360) % 360;
+  if (yaw >= 315 || yaw < 45) {
+    return "south";
+  }
+  if (yaw >= 45 && yaw < 135) {
+    return "west";
+  }
+  if (yaw >= 135 && yaw < 225) {
+    return "north";
+  }
+  return "east";
 }
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
@@ -3731,14 +3744,105 @@ var ShoppingBasketManager = class {
   }
 };
 
+// scripts/shoppingCart/shoppingCartManager.ts
+import {
+  system,
+  world as world2
+} from "@minecraft/server";
+var ShoppingCartManager = class {
+  static {
+    this.map = /* @__PURE__ */ new Map();
+  }
+  // <playerId, cartEntity>
+  static registerComponent(startupEv) {
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:shopping_cart_block", {
+      onPlayerInteract: (ev) => this.onInteractBlock(ev)
+    });
+    system.runInterval(() => this.update(), 1);
+  }
+  static onInteractBlock(ev) {
+    const { block, dimension, player } = ev;
+    if (!player) {
+      sendSystemMessage("[onInteractBlock] \u30D7\u30EC\u30A4\u30E4\u30FC\u304Cundefined\u3067\u3059");
+      return;
+    }
+    if (this.map.has(player.id)) {
+      sendSystemMessage(`[onInteractBlock] \u3059\u3067\u306B\u30D7\u30EC\u30A4\u30E4\u30FC${player.nameTag}\u306F\u30AB\u30FC\u30C8\u3092\u6301\u3063\u3066\u3044\u307E\u3059`);
+      return;
+    }
+    const dir = player.getViewDirection();
+    const rot = player.getRotation();
+    const spawnLoc = {
+      x: player.location.x + dir.x,
+      y: player.location.y,
+      z: player.location.z + dir.z
+    };
+    block.setType(MinecraftBlockTypes.Air);
+    system.run(() => {
+      const entity = dimension.spawnEntity("edu:shopping_cart_entity", spawnLoc);
+      entity.setRotation(rot);
+      this.map.set(player.id, entity);
+    });
+  }
+  static update() {
+    for (const [playerId, cart] of this.map) {
+      const player = world2.getPlayers().find((p) => p.id === playerId);
+      if (!player) {
+        this.map.delete(playerId);
+        continue;
+      }
+      if (!cart.isValid) {
+        this.map.delete(playerId);
+        continue;
+      }
+      const dir = player.getViewDirection();
+      const rot = player.getRotation();
+      const tpLoc = {
+        x: player.location.x + dir.x,
+        y: player.location.y,
+        z: player.location.z + dir.z
+      };
+      cart.teleport(tpLoc);
+      cart.setRotation(rot);
+    }
+  }
+  static onInteractEntity(ev) {
+    const { player, target } = ev;
+    const cart = this.map.get(player.id);
+    if (cart === void 0 || target.id !== cart.id) {
+      sendSystemMessage("[onInteractEntity] \u30A4\u30F3\u30BF\u30E9\u30AF\u30C8\u3057\u305F\u30AB\u30FC\u30C8\u304C\u767B\u9332\u3055\u308C\u3066\u3044\u308B\u3082\u306E\u3068\u4E00\u81F4\u3057\u307E\u305B\u3093");
+      return;
+    }
+    const setLoc = target.location;
+    const rot = target.getRotation();
+    const dir = getCardinalDirection(rot);
+    const block = player.dimension.getBlock(setLoc);
+    if (block === void 0 || !block.isAir) {
+      sendSystemMessage("[onInteractEntity] \u6307\u5B9A\u3057\u305F\u5EA7\u6A19\u306E\u30D6\u30ED\u30C3\u30AF\u304Cundefined\u307E\u305F\u306F\u7A7A\u6C17\u3067\u306F\u3042\u308A\u307E\u305B\u3093");
+      return;
+    }
+    system.run(() => {
+      block.setType("edu:shopping_cart");
+      const perm = block.permutation;
+      block.setPermutation(perm.withState("minecraft:cardinal_direction", dir));
+      target.remove();
+      this.map.delete(player.id);
+    });
+  }
+};
+
 // scripts/main.ts
-system.beforeEvents.startup.subscribe((ev) => {
+system2.beforeEvents.startup.subscribe((ev) => {
   WalkInCoolerManager.registerComponent(ev);
   DisplayManager.registerComponent(ev);
   ShoppingBasketManager.registerComponent(ev);
+  ShoppingCartManager.registerComponent(ev);
 });
-system.afterEvents.scriptEventReceive.subscribe((ev) => {
+system2.afterEvents.scriptEventReceive.subscribe((ev) => {
   sendSystemMessage(`id: ${ev.id}, entity: ${ev.sourceEntity}`);
+});
+world3.afterEvents.playerInteractWithEntity.subscribe((ev) => {
+  ShoppingCartManager.onInteractEntity(ev);
 });
 
 //# sourceMappingURL=../debug/main.js.map
