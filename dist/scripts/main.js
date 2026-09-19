@@ -3659,10 +3659,83 @@ var DisplayManager = class {
   }
 };
 
+// scripts/shoppingBasket/shoppingBasketManager.ts
+import {
+  EntityComponentTypes,
+  ItemStack
+} from "@minecraft/server";
+var ShoppingBasketManager = class {
+  static registerComponent(startupEv) {
+    startupEv.itemComponentRegistry.registerCustomComponent("edu:on_interact", {
+      onUseOn: (ev) => this.onUseShoppingBasket(ev)
+    });
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:shopping_basket_stand", {
+      onBreak: (ev) => this.onBreakShoppingBasketStand(ev)
+    });
+  }
+  static onBreakShoppingBasketStand(ev) {
+    const { brokenBlockPermutation, block } = ev;
+    const amount = brokenBlockPermutation.getState("edu:basket_count");
+    if (typeof amount !== "number") return;
+    const spawnLoc = block.location;
+    const basketItem = new ItemStack("edu:shopping_basket", amount);
+    block.dimension.spawnItem(basketItem, spawnLoc);
+  }
+  static onUseShoppingBasket(ev) {
+    const { source } = ev;
+    const looking = source.getBlockFromViewDirection({ maxDistance: 7 });
+    if (looking === void 0) {
+      sendSystemMessage("[onUseShoppingBasket] \u9078\u629E\u3057\u3066\u3044\u308B\u30D6\u30ED\u30C3\u30AF\u304C\u3042\u308A\u307E\u305B\u3093");
+      return;
+    }
+    const lookingBlock = looking.block;
+    const aboveBlock = lookingBlock.above();
+    const lookingFaceLoc = looking.faceLocation;
+    sendSystemMessage(
+      `[ShoppingBasketManager] lookingFaceLoc: (${lookingFaceLoc.x}, ${lookingFaceLoc.y}, ${lookingFaceLoc.z})`
+    );
+    if (lookingBlock.typeId === "edu:shopping_basket_stand") {
+      this.changeState(source, lookingBlock);
+      return;
+    }
+    if (!aboveBlock || !aboveBlock.isAir) {
+      sendSystemMessage("[onUseShoppingBasket] \u8A2D\u7F6E\u4E88\u5B9A\u306E\u4F4D\u7F6E\u304Cundefined\u53C8\u306F\u7A7A\u6C17\u3067\u306F\u3042\u308A\u307E\u305B\u3093");
+      sendSystemMessage(`[onUseShoppingBasket] ${aboveBlock?.typeId}`);
+      return;
+    }
+    aboveBlock.setType("edu:shopping_basket_stand");
+    this.consumeBasket(source);
+  }
+  static consumeBasket(player) {
+    const container = player.getComponent(EntityComponentTypes.Inventory)?.container;
+    if (container === void 0) return;
+    const slot = player.selectedSlotIndex;
+    const selectedItem = container.getItem(slot);
+    if (selectedItem === void 0) return;
+    if (selectedItem.amount === 1) {
+      container.setItem(slot, void 0);
+    } else {
+      selectedItem.amount--;
+      container.setItem(slot, selectedItem);
+    }
+  }
+  static changeState(player, basket) {
+    const perm = basket.permutation;
+    const currentState = perm.getState("edu:basket_count");
+    if (typeof currentState !== "number") return;
+    if (currentState < 5) {
+      basket.setPermutation(perm.withState("edu:basket_count", currentState + 1));
+      this.consumeBasket(player);
+      return;
+    }
+  }
+};
+
 // scripts/main.ts
 system.beforeEvents.startup.subscribe((ev) => {
   WalkInCoolerManager.registerComponent(ev);
   DisplayManager.registerComponent(ev);
+  ShoppingBasketManager.registerComponent(ev);
 });
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
   sendSystemMessage(`id: ${ev.id}, entity: ${ev.sourceEntity}`);
