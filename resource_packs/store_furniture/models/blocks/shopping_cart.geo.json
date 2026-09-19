@@ -1,0 +1,426 @@
+{
+	"format_version": "1.19.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.shopping_cart",
+				"texture_width": 32,
+				"texture_height": 32,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bone",
+					"pivot": [8, 0, -11]
+				},
+				{
+					"name": "cart",
+					"parent": "bone",
+					"pivot": [-8, 1, -11],
+					"cubes": [
+						{
+							"origin": [-6.6, 2.5, -6.5],
+							"size": [2, 0.5, 0.5],
+							"uv": {
+								"north": {"uv": [21, 0], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [18, 22], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [21, 1], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [22, 21], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [23, 6], "uv_size": [-2, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [23, 7], "uv_size": [-2, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 16.9, 3],
+							"size": [0.5, 0.5, 2],
+							"uv": {
+								"north": {"uv": [0, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [21, 7], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 0], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [21, 16], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [2, 23], "uv_size": [-1, -2], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [15, 23], "uv_size": [-1, -2], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-4.6, 2.5, -14],
+							"size": [0.5, 0.5, 8],
+							"uv": {
+								"north": {"uv": [1, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [12, 8], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 1], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [12, 9], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [13, 18], "uv_size": [-1, -8], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [14, 18], "uv_size": [-1, -8], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 2.5, -6],
+							"size": [0.5, 0.5, 13],
+							"uv": {
+								"north": {"uv": [2, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [0, 0], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 2], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [0, 1], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [1, 15], "uv_size": [-1, -13], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [2, 15], "uv_size": [-1, -13], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 2.9, -2],
+							"size": [0.5, 5.5, 1],
+							"uv": {
+								"north": {"uv": [1, 15], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [15, 16], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [16, 16], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [2, 17], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [4, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 4], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 7.9, -1],
+							"size": [0.5, 0.5, 3],
+							"uv": {
+								"north": {"uv": [23, 4], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [17, 4], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 5], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [17, 5], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [15, 21], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [19, 19], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 6.9, 2],
+							"size": [0.5, 10.5, 1],
+							"uv": {
+								"north": {"uv": [4, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [5, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [6, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [7, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [7, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 7], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 2.9, 6],
+							"size": [0.5, 4.5, 1],
+							"uv": {
+								"north": {"uv": [6, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [7, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [8, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [9, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [8, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 8], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.6, 6.9, 3],
+							"size": [0.5, 0.5, 3],
+							"uv": {
+								"north": {"uv": [8, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [17, 6], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 8], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [17, 7], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [20, 19], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [19, 22], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 2.5, -6],
+							"size": [0.5, 0.5, 13],
+							"uv": {
+								"north": {"uv": [9, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [2, 2], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 9], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [2, 3], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [3, 17], "uv_size": [-1, -13], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [4, 17], "uv_size": [-1, -13], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 2.9, 6],
+							"size": [0.5, 4.5, 1],
+							"uv": {
+								"north": {"uv": [10, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [11, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [12, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [13, 18], "uv_size": [1, 5], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [11, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 11], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 2.9, -2],
+							"size": [0.5, 5.5, 1],
+							"uv": {
+								"north": {"uv": [3, 17], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [17, 16], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [4, 18], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [5, 18], "uv_size": [1, 6], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [12, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 12], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 6.9, 3],
+							"size": [0.5, 0.5, 3],
+							"uv": {
+								"north": {"uv": [12, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [19, 19], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 12], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [20, 4], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [21, 8], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [21, 19], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 7.9, -1],
+							"size": [0.5, 0.5, 3],
+							"uv": {
+								"north": {"uv": [13, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [20, 8], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [23, 13], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [20, 9], "uv_size": [3, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [20, 23], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [21, 23], "uv_size": [-1, -3], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 6.9, 2],
+							"size": [0.5, 10.5, 1],
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [9, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [10, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [11, 8], "uv_size": [1, 10], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [15, 24], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [24, 15], "uv_size": [-1, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [6.1, 16.9, 3],
+							"size": [0.5, 0.5, 2],
+							"uv": {
+								"north": {"uv": [23, 15], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [21, 17], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [16, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [21, 18], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [22, 22], "uv_size": [-1, -2], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [16, 24], "uv_size": [-1, -2], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-6.1, 16.6, 4.3],
+							"size": [12.2, 1, 1],
+							"uv": {
+								"north": {"uv": [4, 4], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [23, 16], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [4, 5], "uv_size": [13, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [17, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [17, 7], "uv_size": [-13, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [17, 8], "uv_size": [-13, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [4.1, 2.5, -14],
+							"size": [0.5, 0.5, 8],
+							"uv": {
+								"north": {"uv": [23, 17], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [13, 0], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [18, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [13, 1], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [15, 18], "uv_size": [-1, -8], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [1, 23], "uv_size": [-1, -8], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-4.1, 2.5, -14],
+							"size": [8.2, 0.5, 1],
+							"uv": {
+								"north": {"uv": [15, 2], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [23, 18], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [15, 3], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [19, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [23, 11], "uv_size": [-8, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [23, 12], "uv_size": [-8, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [-4.1, 2.5, -11],
+							"size": [8.2, 0.5, 1],
+							"uv": {
+								"north": {"uv": [15, 12], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [20, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [15, 13], "uv_size": [8, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [21, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [23, 15], "uv_size": [-8, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [23, 16], "uv_size": [-8, -1], "material_instance": "shopping_cart_cart"}
+							}
+						},
+						{
+							"origin": [4.6, 2.5, -6.5],
+							"size": [2, 0.5, 0.5],
+							"uv": {
+								"north": {"uv": [16, 22], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"east": {"uv": [23, 21], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"south": {"uv": [22, 19], "uv_size": [2, 1], "material_instance": "shopping_cart_cart"},
+								"west": {"uv": [22, 23], "uv_size": [1, 1], "material_instance": "shopping_cart_cart"},
+								"up": {"uv": [24, 21], "uv_size": [-2, -1], "material_instance": "shopping_cart_cart"},
+								"down": {"uv": [23, 23], "uv_size": [-2, -1], "material_instance": "shopping_cart_cart"}
+							}
+						}
+					]
+				},
+				{
+					"name": "basket",
+					"parent": "bone",
+					"pivot": [8, 1, -11],
+					"cubes": [
+						{
+							"origin": [-4, 8.5, -16],
+							"size": [8, 6.5, 9],
+							"uv": {
+								"north": {"uv": [18, 16], "uv_size": [8, 6.5], "material_instance": "shopping_cart_basket"},
+								"east": {"uv": [9, 16], "uv_size": [9, 6.5], "material_instance": "shopping_cart_basket"},
+								"south": {"uv": [20, 7], "uv_size": [8, 6.5], "material_instance": "shopping_cart_basket"},
+								"west": {"uv": [9, 16], "uv_size": [9, 6.5], "material_instance": "shopping_cart_basket"},
+								"up": {"uv": [21, 31.5], "uv_size": [-8, -9], "material_instance": "shopping_cart_basket"},
+								"down": {"uv": [20, 16], "uv_size": [-8, -9], "material_instance": "shopping_cart_basket"}
+							}
+						},
+						{
+							"origin": [-6, 8, -7],
+							"size": [12, 7, 9],
+							"uv": {
+								"north": {"uv": [0, 9], "uv_size": [12, 7], "material_instance": "shopping_cart_basket"},
+								"east": {"uv": [0, 16], "uv_size": [9, 7], "material_instance": "shopping_cart_basket"},
+								"south": {"uv": [12, 0], "uv_size": [12, 7], "material_instance": "shopping_cart_basket"},
+								"west": {"uv": [0, 16], "uv_size": [9, 7], "material_instance": "shopping_cart_basket"},
+								"up": {"uv": [21, 31.5], "uv_size": [-12, -9], "material_instance": "shopping_cart_basket"},
+								"down": {"uv": [12, 9], "uv_size": [-12, -9], "material_instance": "shopping_cart_basket"}
+							}
+						}
+					]
+				},
+				{
+					"name": "wheel",
+					"parent": "bone",
+					"pivot": [8, 0, -11]
+				},
+				{
+					"name": "tire",
+					"parent": "wheel",
+					"pivot": [4.8, 0, -13],
+					"cubes": [
+						{
+							"origin": [3.8, 0, -14.5],
+							"size": [1, 2, 2],
+							"uv": {
+								"north": {"uv": [8, 8], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [0, 0], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [10, 8], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [0, 4], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [2, 16], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [14, 4], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [5.8, 0, 5.5],
+							"size": [1, 2, 2],
+							"uv": {
+								"north": {"uv": [2, 12], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [4, 0], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [4, 12], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [4, 4], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [14, 8], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [8, 16], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [-6.8, 0, 5.5],
+							"size": [1, 2, 2],
+							"uv": {
+								"north": {"uv": [8, 12], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [0, 8], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [12, 8], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [8, 0], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [12, 16], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [14, 16], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [-4.8, 0, -14.5],
+							"size": [1, 2, 2],
+							"uv": {
+								"north": {"uv": [14, 0], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [4, 8], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [14, 4], "uv_size": [2, 4], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [8, 4], "uv_size": [4, 4], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [16, 12], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [16, 16], "uv_size": [-2, -4], "material_instance": "shopping_cart_wheel"}
+							}
+						}
+					]
+				},
+				{
+					"name": "shaft",
+					"parent": "wheel",
+					"pivot": [5, 1, -13.5],
+					"cubes": [
+						{
+							"origin": [4, 1, -14],
+							"size": [0.5, 1.5, 1],
+							"uv": {
+								"north": {"uv": [10, 16], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [0, 16], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [12, 16], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [16, 0], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [19, 14], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [19, 16], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [-6.5, 1, 6],
+							"size": [0.5, 1.5, 1],
+							"uv": {
+								"north": {"uv": [16, 12], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [2, 16], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [14, 16], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [4, 16], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [19, 18], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [19, 20], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [-4.5, 1, -14],
+							"size": [0.5, 1.5, 1],
+							"uv": {
+								"north": {"uv": [16, 16], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [16, 4], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [18, 0], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [6, 16], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [1, 22], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [21, 2], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"}
+							}
+						},
+						{
+							"origin": [6, 1, 6],
+							"size": [0.5, 1.5, 1],
+							"uv": {
+								"north": {"uv": [18, 4], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"east": {"uv": [8, 16], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"south": {"uv": [18, 8], "uv_size": [1, 3], "material_instance": "shopping_cart_wheel"},
+								"west": {"uv": [16, 8], "uv_size": [2, 3], "material_instance": "shopping_cart_wheel"},
+								"up": {"uv": [3, 22], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"},
+								"down": {"uv": [21, 4], "uv_size": [-1, -2], "material_instance": "shopping_cart_wheel"}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

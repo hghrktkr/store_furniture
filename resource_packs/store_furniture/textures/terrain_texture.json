@@ -4,6 +4,15 @@
   "padding": 8,
   "num_mip_levels": 4,
   "texture_data": {
+    "shopping_cart_cart": {
+      "textures": "textures/blocks/shopping_cart/shopping_cart_cart"
+    },
+    "shopping_cart_basket": {
+      "textures": "textures/blocks/shopping_cart/shopping_cart_basket"
+    },
+    "shopping_cart_wheel": {
+      "textures": "textures/blocks/shopping_cart/shopping_cart_wheel"
+    },
     "shopping_basket_basket": {
       "textures": "textures/blocks/shopping_basket/shopping_basket_basket"
     },

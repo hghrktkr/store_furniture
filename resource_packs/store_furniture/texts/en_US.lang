@@ -19,3 +19,4 @@ tile.edu:milk_display.name=milk_display
 tile.edu:goods_shelf.name=goods_shelf
 item.edu:shopping_basket=shopping_basket
 tile.edu:shopping_basket_stand.name=shopping_basket_stand
+tile.edu:shopping_cart.name=shopping_cart
