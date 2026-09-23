@@ -2,6 +2,7 @@ import {
   BlockComponentBlockBreakEvent,
   BlockComponentOnPlaceEvent,
   BlockComponentPlayerInteractEvent,
+  ItemStack,
   StartupEvent,
 } from "@minecraft/server";
 import { BlockStateSuperset, MinecraftBlockTypes } from "@minecraft/vanilla-data";
@@ -42,8 +43,9 @@ export class SelfRegisterManager {
   }
 
   static onBreakBottom(ev: BlockComponentBlockBreakEvent) {
-    const { block } = ev;
+    const { block, dimension } = ev;
     const aboveBlock = block.above();
+    const loc = block.location;
 
     if (aboveBlock === undefined || aboveBlock.typeId !== "edu:self_register_top") {
       sendSystemMessage(`[SelfRegisterManager onBreakBottom] 上部のブロックが${aboveBlock?.typeId}です`);
@@ -52,11 +54,16 @@ export class SelfRegisterManager {
     }
 
     aboveBlock.setType(MinecraftBlockTypes.Air);
+
+    // 破壊時にスポーンさせるアイテム
+    const item = new ItemStack("edu:self_register");
+    dimension.spawnItem(item, loc);
   }
 
   static onBreakTop(ev: BlockComponentBlockBreakEvent) {
-    const { block } = ev;
+    const { block, dimension } = ev;
     const belowBlock = block.below();
+    const loc = block.location;
 
     if (belowBlock === undefined || belowBlock.typeId !== "edu:self_register") {
       sendSystemMessage(`[SelfRegisterManager onBreakTop] 下部のブロックが${belowBlock?.typeId}です`);
@@ -65,6 +72,10 @@ export class SelfRegisterManager {
     }
 
     belowBlock.setType(MinecraftBlockTypes.Air);
+
+    // 破壊時にスポーンさせるアイテム
+    const item = new ItemStack("edu:self_register");
+    dimension.spawnItem(item, loc);
   }
 
   static onInteractTop(ev: BlockComponentPlayerInteractEvent) {

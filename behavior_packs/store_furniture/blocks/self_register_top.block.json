@@ -37,6 +37,7 @@
       },
       "minecraft:light_emission": 7,
       "minecraft:map_color": "#5f4a2b",
+      "minecraft:loot": "loot_tables/blocks/empty.json",
       "edu:self_register_top": {}
     },
     "permutations": [
