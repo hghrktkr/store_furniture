@@ -20,15 +20,15 @@ function sendSystemMessage(text) {
 function getCardinalDirection(rotation) {
   const yaw = (rotation.y % 360 + 360) % 360;
   if (yaw >= 315 || yaw < 45) {
-    return "south";
-  }
-  if (yaw >= 45 && yaw < 135) {
-    return "west";
-  }
-  if (yaw >= 135 && yaw < 225) {
     return "north";
   }
-  return "east";
+  if (yaw >= 45 && yaw < 135) {
+    return "east";
+  }
+  if (yaw >= 135 && yaw < 225) {
+    return "south";
+  }
+  return "west";
 }
 
 // node_modules/@minecraft/vanilla-data/lib/index.js
@@ -3831,12 +3831,75 @@ var ShoppingCartManager = class {
   }
 };
 
+// scripts/selfRegister/selfRegisterManager.ts
+var SelfRegisterManager = class {
+  static registerComponent(startupEv) {
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:self_register_bottom", {
+      onPlace: (ev) => this.onPlaceBottom(ev),
+      onBreak: (ev) => this.onBreakBottom(ev)
+    });
+    startupEv.blockComponentRegistry.registerCustomComponent("edu:self_register_top", {
+      onBreak: (ev) => this.onBreakTop(ev),
+      onPlayerInteract: (ev) => this.onInteractTop(ev)
+    });
+  }
+  static onPlaceBottom(ev) {
+    const { block } = ev;
+    const aboveBlock = block.above();
+    const dir = block.permutation.getState("minecraft:cardinal_direction");
+    if (aboveBlock === void 0 || !aboveBlock.isAir) {
+      sendSystemMessage(`[SelfRegisterManager onPlaceBottom] \u4E0A\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u304C${aboveBlock?.typeId}\u3067\u3059`);
+      block.setType(MinecraftBlockTypes.Air);
+      return;
+    }
+    if (dir === void 0) {
+      sendSystemMessage("[SelfRegisterManager onPlaceBottom] \u4E0B\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u306Ecardinal_direction\u304Cundefined\u3067\u3059");
+      return;
+    }
+    aboveBlock.setType("edu:self_register_top");
+    const perm = aboveBlock.permutation;
+    aboveBlock.setPermutation(perm.withState("minecraft:cardinal_direction", dir));
+  }
+  static onBreakBottom(ev) {
+    const { block } = ev;
+    const aboveBlock = block.above();
+    if (aboveBlock === void 0 || aboveBlock.typeId !== "edu:self_register_top") {
+      sendSystemMessage(`[SelfRegisterManager onBreakBottom] \u4E0A\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u304C${aboveBlock?.typeId}\u3067\u3059`);
+      block.setType(MinecraftBlockTypes.Air);
+      return;
+    }
+    aboveBlock.setType(MinecraftBlockTypes.Air);
+  }
+  static onBreakTop(ev) {
+    const { block } = ev;
+    const belowBlock = block.below();
+    if (belowBlock === void 0 || belowBlock.typeId !== "edu:self_register") {
+      sendSystemMessage(`[SelfRegisterManager onBreakTop] \u4E0B\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u304C${belowBlock?.typeId}\u3067\u3059`);
+      block.setType(MinecraftBlockTypes.Air);
+      return;
+    }
+    belowBlock.setType(MinecraftBlockTypes.Air);
+  }
+  static onInteractTop(ev) {
+    const { block } = ev;
+    const perm = block.permutation;
+    const currentState = perm.getState("edu:monitor");
+    if (typeof currentState !== "number") {
+      sendSystemMessage(`[SelfRegisterManager onInteractTop] edu:monitor\u306E\u578B\u304C${typeof currentState}\u3067\u3059`);
+      return;
+    }
+    const newState = currentState === 1 ? 2 : 1;
+    block.setPermutation(perm.withState("edu:monitor", newState));
+  }
+};
+
 // scripts/main.ts
 system2.beforeEvents.startup.subscribe((ev) => {
   WalkInCoolerManager.registerComponent(ev);
   DisplayManager.registerComponent(ev);
   ShoppingBasketManager.registerComponent(ev);
   ShoppingCartManager.registerComponent(ev);
+  SelfRegisterManager.registerComponent(ev);
 });
 system2.afterEvents.scriptEventReceive.subscribe((ev) => {
   sendSystemMessage(`id: ${ev.id}, entity: ${ev.sourceEntity}`);

@@ -4,6 +4,7 @@ import { sendSystemMessage } from "./util/util";
 import { DisplayManager } from "./display/displayManager";
 import { ShoppingBasketManager } from "./shoppingBasket/shoppingBasketManager";
 import { ShoppingCartManager } from "./shoppingCart/shoppingCartManager";
+import { SelfRegisterManager } from "./selfRegister/selfRegisterManager";
 
 // カスタムコンポーネント登録
 system.beforeEvents.startup.subscribe((ev: StartupEvent) => {
@@ -11,6 +12,7 @@ system.beforeEvents.startup.subscribe((ev: StartupEvent) => {
   DisplayManager.registerComponent(ev);
   ShoppingBasketManager.registerComponent(ev);
   ShoppingCartManager.registerComponent(ev);
+  SelfRegisterManager.registerComponent(ev);
 });
 
 system.afterEvents.scriptEventReceive.subscribe((ev) => {
