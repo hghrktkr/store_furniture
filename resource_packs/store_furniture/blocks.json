@@ -1,5 +1,11 @@
 {
 	"format_version": "1.21.0",
+	"edu:self_register_top": {
+		"sound": "wood"
+	},
+	"edu:self_register": {
+		"sound": "wood"
+	},
 	"edu:shopping_cart": {
 		"sound": "wood"
 	},

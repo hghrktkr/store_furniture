@@ -1,0 +1,107 @@
+{
+  "format_version": "1.26.32",
+  "minecraft:block": {
+    "description": {
+      "identifier": "edu:self_register_top",
+      "menu_category": {
+        "category": "construction"
+      },
+      "states": {
+        "edu:monitor": [1, 2]
+      },
+      "traits": {
+        "minecraft:placement_direction": {
+          "enabled_states": ["minecraft:cardinal_direction"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": true,
+      "minecraft:selection_box": true,
+      "minecraft:destructible_by_mining": {
+        "seconds_to_destroy": 0.65
+      },
+      "minecraft:destructible_by_explosion": {
+        "explosion_resistance": 15
+      },
+      "minecraft:geometry": "geometry.self_register_top",
+      "minecraft:material_instances": {
+        "self_register_top_body": {
+          "texture": "self_register_top_body",
+          "render_method": "alpha_test"
+        },
+        "self_register_top_monitor": {
+          "texture": "self_register_top_monitor_1",
+          "render_method": "alpha_test"
+        }
+      },
+      "minecraft:light_emission": 7,
+      "minecraft:map_color": "#5f4a2b",
+      "edu:self_register_top": {}
+    },
+    "permutations": [
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'north'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 180, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'south'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 0, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'east'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 90, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('minecraft:cardinal_direction') == 'west'",
+        "components": {
+          "minecraft:transformation": {
+            "rotation": [0, 270, 0]
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:monitor') == 1",
+        "components": {
+          "minecraft:material_instances": {
+            "self_register_top_body": {
+              "texture": "self_register_top_body",
+              "render_method": "alpha_test"
+            },
+            "self_register_top_monitor": {
+              "texture": "self_register_top_monitor_1",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      },
+      {
+        "condition": "q.block_state('edu:monitor') == 2",
+        "components": {
+          "minecraft:material_instances": {
+            "self_register_top_body": {
+              "texture": "self_register_top_body",
+              "render_method": "alpha_test"
+            },
+            "self_register_top_monitor": {
+              "texture": "self_register_top_monitor_2",
+              "render_method": "alpha_test"
+            }
+          }
+        }
+      }
+    ]
+  }
+}
