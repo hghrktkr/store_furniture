@@ -2,7 +2,7 @@
   "format_version": "1.21.100",
   "minecraft:block": {
     "description": {
-      "identifier": "edu:convinience_store_wall_corner",
+      "identifier": "edu:convenience_store_wall_corner",
       "menu_category": {
         "category": "construction"
       },
@@ -21,10 +21,10 @@
       "minecraft:destructible_by_explosion": {
         "explosion_resistance": 15
       },
-      "minecraft:geometry": "geometry.convinience_store_wall_corner",
+      "minecraft:geometry": "geometry.convenience_store_wall_corner",
       "minecraft:material_instances": {
         "*": {
-          "texture": "convinience_store_wall",
+          "texture": "convenience_store_wall",
           "render_method": "alpha_test"
         }
       },
