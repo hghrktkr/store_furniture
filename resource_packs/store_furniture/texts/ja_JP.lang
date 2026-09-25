@@ -11,10 +11,6 @@ tile.edu:logo.name=ロゴ
 tile.edu:chilled_showcase.name=冷蔵ケース
 tile.edu:microwave.name=電子レンジ
 entity.edu:clerk.name=店員
-
-item.spawn_egg.entity.edu:clerk.name=店員のスポーンエッグ
-
-tile.edu:shelf_vegetable.name=野菜のカゴ
 tile.edu:fish_display.name=魚介類のディスプレイ
 tile.edu:meat_display.name=肉類のディスプレイ
 tile.edu:bread_shelf.name=パンの棚
@@ -29,3 +25,4 @@ entity.edu:shopping_cart_entity.name=カート
 tile.edu:self_register.name=セルフレジ
 tile.edu:self_register_top.name=self_register_top
 tile.edu:sale.name=セールの札
+tile.edu:basket.name=野菜のカゴ
