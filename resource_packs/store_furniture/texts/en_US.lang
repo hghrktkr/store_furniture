@@ -23,3 +23,4 @@ tile.edu:shopping_cart.name=shopping_cart
 entity.edu:shopping_cart_entity.name=shopping_cart_entity
 tile.edu:self_register.name=self_register
 tile.edu:self_register_top.name=self_register_top
+tile.edu:sale.name=sale

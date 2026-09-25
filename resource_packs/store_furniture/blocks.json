@@ -1,5 +1,8 @@
 {
 	"format_version": "1.21.0",
+	"edu:sale": {
+		"sound": "wood"
+	},
 	"edu:self_register_top": {
 		"sound": "wood"
 	},
