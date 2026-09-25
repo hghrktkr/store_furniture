@@ -1,7 +1,7 @@
 tile.edu:walk_in_cooler.name=ウォークイン
 tile.edu:walk_in_cooler_top.name=walk_in_cooler_top
 tile.edu:icecream_case_corner.name=アイスクリームケース（角）
-tile.edu:icecream_case_corner_reverse.name = アイスクリーム（角・逆側）
+tile.edu:icecream_case_corner_reverse.name = アイスクリームケース（角・逆側）
 tile.edu:icecream_case_middle=アイスクリームケース（真ん中）
 tile.edu:analog_clock.name=時計
 tile.edu:hot_snack.name=ホットスナック
