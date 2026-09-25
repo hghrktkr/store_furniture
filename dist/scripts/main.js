@@ -3832,6 +3832,9 @@ var ShoppingCartManager = class {
 };
 
 // scripts/selfRegister/selfRegisterManager.ts
+import {
+  ItemStack as ItemStack2
+} from "@minecraft/server";
 var SelfRegisterManager = class {
   static registerComponent(startupEv) {
     startupEv.blockComponentRegistry.registerCustomComponent("edu:self_register_bottom", {
@@ -3861,24 +3864,30 @@ var SelfRegisterManager = class {
     aboveBlock.setPermutation(perm.withState("minecraft:cardinal_direction", dir));
   }
   static onBreakBottom(ev) {
-    const { block } = ev;
+    const { block, dimension } = ev;
     const aboveBlock = block.above();
+    const loc = block.location;
     if (aboveBlock === void 0 || aboveBlock.typeId !== "edu:self_register_top") {
       sendSystemMessage(`[SelfRegisterManager onBreakBottom] \u4E0A\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u304C${aboveBlock?.typeId}\u3067\u3059`);
       block.setType(MinecraftBlockTypes.Air);
       return;
     }
     aboveBlock.setType(MinecraftBlockTypes.Air);
+    const item = new ItemStack2("edu:self_register");
+    dimension.spawnItem(item, loc);
   }
   static onBreakTop(ev) {
-    const { block } = ev;
+    const { block, dimension } = ev;
     const belowBlock = block.below();
+    const loc = block.location;
     if (belowBlock === void 0 || belowBlock.typeId !== "edu:self_register") {
       sendSystemMessage(`[SelfRegisterManager onBreakTop] \u4E0B\u90E8\u306E\u30D6\u30ED\u30C3\u30AF\u304C${belowBlock?.typeId}\u3067\u3059`);
       block.setType(MinecraftBlockTypes.Air);
       return;
     }
     belowBlock.setType(MinecraftBlockTypes.Air);
+    const item = new ItemStack2("edu:self_register");
+    dimension.spawnItem(item, loc);
   }
   static onInteractTop(ev) {
     const { block } = ev;
