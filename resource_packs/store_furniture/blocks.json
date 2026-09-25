@@ -1,69 +1,69 @@
 {
-	"format_version": "1.21.0",
-	"edu:sale": {
-		"sound": "wood"
-	},
-	"edu:self_register_top": {
-		"sound": "wood"
-	},
-	"edu:self_register": {
-		"sound": "wood"
-	},
-	"edu:shopping_cart": {
-		"sound": "wood"
-	},
-	"edu:shopping_basket_stand": {
-		"sound": "wood"
-	},
-	"edu:goods_shelf": {
-		"sound": "wood"
-	},
-	"edu:milk_display": {
-		"sound": "wood"
-	},
-	"edu:delica_display": {
-		"sound": "wood"
-	},
-	"edu:snack_shelf": {
-		"sound": "wood"
-	},
-	"edu:bread_shelf": {
-		"sound": "wood"
-	},
-	"edu:fish_display": {
-		"sound": "wood"
-	},
-	"edu:shelf_vegitable": {
-		"sound": "wood"
-	},
-	"edu:microwave": {
-		"sound": "wood"
-	},
-	"edu:chilled_showcase": {
-		"sound": "wood"
-	},
-	"edu:logo": {
-		"sound": "wood"
-	},
-	"edu:pos": {
-		"sound": "wood"
-	},
-	"edu:convinience_store_wall": {
-		"sound": "stone"
-	},
-	"edu:hot_snack": {
-		"sound": "wood"
-	},
-	"edu:analog_clock": {
-		"sound": "wood"
-	},
-	"edu:icecream_case_corner": {
-		"sound": "wood"
-	},
-	"edu:walk_in_cooler_top": {
-		"sound": "wood"
-	},
-	"edu:walk_in_cooler": {
-		"sound": "wood"
-	}
+  "format_version": "1.21.0",
+  "edu:sale": {
+    "sound": "wood"
+  },
+  "edu:self_register_top": {
+    "sound": "wood"
+  },
+  "edu:self_register": {
+    "sound": "wood"
+  },
+  "edu:shopping_cart": {
+    "sound": "wood"
+  },
+  "edu:shopping_basket_stand": {
+    "sound": "wood"
+  },
+  "edu:goods_shelf": {
+    "sound": "wood"
+  },
+  "edu:milk_display": {
+    "sound": "wood"
+  },
+  "edu:delica_display": {
+    "sound": "wood"
+  },
+  "edu:snack_shelf": {
+    "sound": "wood"
+  },
+  "edu:bread_shelf": {
+    "sound": "wood"
+  },
+  "edu:fish_display": {
+    "sound": "wood"
+  },
+  "edu:shelf_vegetable": {
+    "sound": "wood"
+  },
+  "edu:microwave": {
+    "sound": "wood"
+  },
+  "edu:chilled_showcase": {
+    "sound": "wood"
+  },
+  "edu:logo": {
+    "sound": "wood"
+  },
+  "edu:pos": {
+    "sound": "wood"
+  },
+  "edu:convinience_store_wall": {
+    "sound": "stone"
+  },
+  "edu:hot_snack": {
+    "sound": "wood"
+  },
+  "edu:analog_clock": {
+    "sound": "wood"
+  },
+  "edu:icecream_case_corner": {
+    "sound": "wood"
+  },
+  "edu:walk_in_cooler_top": {
+    "sound": "wood"
+  },
+  "edu:walk_in_cooler": {
+    "sound": "wood"
+  }
 }
