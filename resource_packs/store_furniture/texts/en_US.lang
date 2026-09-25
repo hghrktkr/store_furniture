@@ -14,7 +14,7 @@ entity.edu:clerk.name=店員
 
 item.spawn_egg.entity.edu:clerk.name=店員のスポーンエッグ
 
-tile.edu:shelf_vegitable.name=野菜のカゴ
+tile.edu:shelf_vegetable.name=野菜のカゴ
 tile.edu:fish_display.name=魚介類のディスプレイ
 tile.edu:meat_display.name=肉類のディスプレイ
 tile.edu:bread_shelf.name=パンの棚
